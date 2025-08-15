@@ -1,39 +1,86 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: "Raleway", sans-serif;
+  background-color: #1a1a1a;
+  color: #f8f9fa;
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Hero Section */
-
-#Principal {
-  background-image: url("../img/bg-hero.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left;
+.navbar {
+  background-color: #212529 !important;
 }
 
-/* Mis trabajos */
-
-#Proyectos .image-top {
-  height: 300px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;  
+.navbar-brand,
+.nav-link {
+  color: #f8f9fa !important;
 }
 
-/* Contacto */
-
-#Contacto form label {
-  font-weight: 700;
-  color: #373a3c;
+.nav-link.active {
+  color: #0d6efd !important;
 }
 
-@media (max-width: 768px) {
-  #Contacto form label {
-    font-weight: 400;
-  }
+.svg{
+  width: 50px;
+  height: 50px;
+}
 
-  .navbar-brand{
-    width: 100px;
-  }
+.container {
+  max-width: 960px;
+}
 
+.profile-pic-container {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid #0d6efd;
+  margin: 0 auto;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card {
+  background-color: #212529;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.form-control,
+.form-control:focus {
+  background-color: #343a40;
+  color: #f8f9fa;
+  border: 1px solid #495057;
+}
+
+.form-label {
+  color: #f8f9fa;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #343a40;
+}
+
+footer {
+  background-color: #212529;
+  color: #f8f9fa;
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 1px solid #343a40;
 }
